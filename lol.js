@@ -5,10 +5,19 @@ function valueOfPicsels () {
 }
 
 function showHowPicsels (valueOfPicsels) {
-    let element = document.querySelector('#px')
+    let element = document.querySelector('#px');
     element.textContent = valueOfPicsels() +' пикселей';
     element.style.fontSize = 16 + 'px';
-    px.appendChild(element);
 }
+
+let polzunok = document.querySelector('#razmer');
+polzunok.addEventListener('mousemove', function () {
+    showHowPicsels (valueOfPicsels);
+});
+
+
+
+
+
 
 
