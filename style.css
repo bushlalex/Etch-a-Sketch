@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+.headcontainer {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
