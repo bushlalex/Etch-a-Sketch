@@ -10,9 +10,31 @@
 <body>
     <div class="headcontainer">
         <p>Укажите размер пера:</p>
-        <input type="range" id="razmer" min="1" max="100" value="50">
+        <input type="range" id="razmer" min="1" max="100" value="28">
         <p id="px"></p>
-        <button id="vibor">Применить</button>
+        <button id="vibor" onclick="reload ()">Очистить холст</button>
+    </div>
+    <div class="headcontainer1">
+        <p>Выберите цвет пера:</p>
+        <select id="color" value="black"> 
+            <option class="black" value="black"></option>
+            <option class="white" value="white"></option>
+            <option class="red" value="red"></option>
+            <option class="green" value="green"></option>
+            <option class="blue" value="blue"></option>
+            <option class="yellow" value="yellow"></option>
+            <option class="purple" value="purple"></option>
+            <option class="orange" value="orange"></option>
+            <option class="pink" value="pink"></option>
+            <option class="gray" value="gray"></option>
+            <option class="brown" value="brown"></option>
+            <option class="cyan" value="cyan"></option>
+            <option class="magenta" value="magenta"></option>
+            <option class="lime" value="lime"></option>
+        </select>        
+    </div>
+    <div class="maincontainer">    
+    <canvas width="1200" height="1200"></canvas>    
     </div>    
 </body>
 </html>

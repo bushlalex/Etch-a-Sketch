@@ -5,9 +5,65 @@
 
 
 
-.headcontainer {
+.headcontainer,
+.headcontainer1 {
     display: flex;
     gap: 14px;
     align-items: center;
+    margin-top: 7px;
+    margin-left: 30px;
 }
+
+.black {
+    background-color: black;
+}
+.white {
+    background-color: white;
+}
+.red {
+ background-color: red;
+}
+.green {
+background-color: green;
+}
+.blue {
+background-color: blue;
+}
+.yellow {
+background-color: yellow;
+}
+.purple {
+background-color: purple;
+}
+.orange {
+background-color: orange;
+}
+.pink {
+background-color: pink;
+}
+.gray {
+background-color: gray;
+}
+.brown {
+background-color: brown;
+}
+.cyan {
+background-color: cyan;
+}
+.magenta {
+background-color: magenta;
+}
+.lime {
+background-color: lime;
+}
+
+select {
+        width: 200px;
+        height: 20px;
+        padding: 5px;
+        border-radius: 4px;
+        border: 1px solid #ccc;       
+    }
+
+
 
