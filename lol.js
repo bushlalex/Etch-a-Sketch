@@ -37,13 +37,31 @@ let canvas = document.querySelector("canvas");
 let context = canvas.getContext("2d");
 context.fillStyle = getColor ();
 
+let ispressed = false;
+
+canvas.addEventListener('mouseup', function() {
+    ispressed = false;
+});
+
+canvas.addEventListener('mousedown', function() {
+    ispressed = true;    
+});
+
+
 
 canvas.addEventListener('mousemove', function() {
+
+    if (ispressed==true) {
     let x = event.clientX - canvas.offsetLeft;
     let y = event.clientY - canvas.offsetTop;
     context.fillStyle = getColor ();
-    context.fillRect(x, y, showHowPicsels (valueOfPicsels), showHowPicsels (valueOfPicsels));
+    context.fillRect(x, y, showHowPicsels (valueOfPicsels), showHowPicsels (valueOfPicsels))}
+    else nothing;
 })
+
+
+
+
 
 
 
